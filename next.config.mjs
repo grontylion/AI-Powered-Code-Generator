@@ -7,6 +7,14 @@ const nextConfig = {
   experimental: {
     serverComponentsExternalPackages: ["pino", "pino-pretty"],
   },
+  images: {
+    remotePatterns: [
+      {
+        hostname: 'v0.dev',
+        protocol: 'https',
+      },
+    ],
+  },
 };
 
 export default withNextIntl(nextConfig)
