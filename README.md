@@ -2,7 +2,7 @@
 
 [English](./README.md) | [中文](./README-zh.md)
 
-> ⚠️ Note: This project is under active development and may have incomplete features or changes.
+> ⚠️ Note: This project is being discontinued. We are developing a new project that will inherit and improve upon the current features. Please stay tuned for updates.
 
 ## 📌 Introduction
 
@@ -43,3 +43,7 @@ Suggestions and code contributions are welcome! Please check our contribution gu
 ## 📄 License
 
 This project is licensed under the GPL-3.0 License. See the [LICENSE](LICENSE) file for details.
+
+## 🔔 Important Notice
+
+We are developing a new project that will inherit and improve upon the current features. We will release more information soon. Stay tuned!

@@ -1,7 +1,7 @@
+import containerQueries from '@tailwindcss/container-queries';
 import type { Config } from "tailwindcss";
 import animatePlugin from "tailwindcss-animate";
 import { PluginAPI } from "tailwindcss/types/config";
-
 const config: Config = {
   darkMode: ['class'],
   content: [
@@ -11,7 +11,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mono: 'var(--font-roboto-mono)',
+        sans: 'var(--font-inter)',
+      },
       colors: {
+        alpha: {
+          400: 'hsl(var(--alpha-400))',
+          600: 'hsl(var(--alpha-600))',
+        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -52,6 +60,15 @@ const config: Config = {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
+        gray: {
+          150: 'rgb(var(--gray-150))',
+          700: 'rgb(var(--gray-700))',
+          900: 'rgb(var(--gray-900))',
+        },
+      },
+      width: {
+        'sidebar-expanded': 'var(--sidebar-width-expanded)',
+        'sidebar-collapsed': 'var(--sidebar-width-collapsed)',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -62,6 +79,7 @@ const config: Config = {
   },
   plugins: [
     animatePlugin,
+    containerQueries,
     ({ addBase, theme }: PluginAPI) => {
       addBase({
         '::-webkit-scrollbar': {
@@ -101,3 +119,6 @@ const config: Config = {
   ],
 }
 export default config;
+
+
+
